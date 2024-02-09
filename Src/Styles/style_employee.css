@@ -188,14 +188,12 @@
   color: var(--white);
 }
 
-/* ================== Order Details List ============== */
 .details {
   position: relative;
   width: 100%;
   padding: 20px;
   display: grid;
   grid-gap: 30px;
-  /* margin-top: 10px; */
 }
 .details .recentOrders {
   position: relative;
@@ -254,8 +252,65 @@
 .details .recentOrders table tr td:nth-child(3) {
   text-align: center;
 }
-
-/* ====================== Responsive Design ========================== */
+.attendance {
+  background-color: var(--gray);
+}
+.attendance-nav {
+  border-bottom: 1px solid rgb(182, 181, 181);
+}
+.attendance-inner {
+  margin: 0px 40px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.attendance-inner a {
+  color: black;
+}
+.navbrand {
+  height: 90px;
+}
+.avatar-icon {
+  font-size: 35px;
+  height: 90px;
+}
+.attendance-container {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* border: 1px solid red; */
+  padding: 90px;
+  border-radius: 30px;
+  box-shadow: 8px 6px 67px -14px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 8px 6px 67px -14px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 8px 6px 67px -14px rgba(0, 0, 0, 0.64);
+}
+.attendance-name h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.attendance-image {
+  text-align: center;
+}
+.attendance-image img {
+  width: 300px;
+  border-radius: 50%;
+}
+.attendance-button-holder {
+  display: flex;
+  flex-direction: column;
+}
+.attendance-button-holder button {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.time {
+  padding-top: 30px;
+  margin-right: 60px;
+  font-size: 30px;
+  font-weight: 700;
+}
 @media (max-width: 991px) {
   .navigation {
     left: -300px;
