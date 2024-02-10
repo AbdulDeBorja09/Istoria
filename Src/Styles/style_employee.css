@@ -256,7 +256,7 @@
 }
 .attendance {
   background-color: var(--gray);
-  background-image: url(/assets/Images/bean2.png);
+  background-image: url(/assets/Images/bean3.png);
   position: relative;
 }
 .attendance-nav {
@@ -318,7 +318,8 @@
   color: #fff;
 }
 .timeout {
-  border: 1px solid var(--gray2);
+  border: 1px solid var(--white);
+  color: white;
 }
 
 .time {
