@@ -45,26 +45,6 @@
 
   transition: 0.3s ease-in-out;
 }
-/* .navigations ul li:hover {
-  list-style: none;
-  transform: skew(10deg);
-  
-}
-
-.navigations ul li {
-  text-decoration: none;
-  color: #231f20;
-  margin: 0px 17px;
-  padding: 10px 15px;
-  background-color: white;
-  transform: skew(-10deg);
-  
-}
-.navigations ul li a {
-  transform: skew(40deg);
-  
-} */
-
 .navigations ul li a:hover {
   transform: scale(1.1);
 }
@@ -72,20 +52,18 @@
   text-decoration: none;
   color: #231f20;
   margin: 0px 25px;
-  padding: 3px 15px;
+  padding: 3px 20px;
   background-color: white;
-  transform: skew(-10deg);
+  transform: skew(-40deg);
   transition: 0.3s ease;
 }
 
 .navigations ul li a {
-  display: inline-block; /* Ensure the link behaves properly with the skewed parent */
+  display: inline-block;
   text-decoration: none;
   color: #231f20;
   font-size: 12px;
-  transform: skew(
-    10deg
-  ); /* Skew the link text to match the background box skew */
+  transform: skew(40deg);
 }
 .navigations ul li:hover {
   transform: scale(1.1);
