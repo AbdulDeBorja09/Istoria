@@ -9,8 +9,9 @@
 }
 
 :root {
-  --blue: #5f5449;
+  --brown: #473f38;
   --white: #ffffffd0;
+  --white2: #ffffff;
   --gray: #f5f5f5;
   --black1: #222;
   --black2: #999;
@@ -20,8 +21,8 @@
   position: fixed;
   width: 300px;
   height: 100%;
-  background: var(--blue);
-  border-left: 10px solid var(--blue);
+  background: var(--brown);
+  border-left: 10px solid var(--brown);
   transition: 0.5s;
   overflow: hidden;
 }
@@ -46,7 +47,7 @@
 
 .navigation ul li:hover,
 .navigation ul li.hovered {
-  background-color: var(--white);
+  background-color: var(--gray);
 }
 
 .navigation ul li:nth-child(1) {
@@ -60,11 +61,11 @@
   width: 100%;
   display: flex;
   text-decoration: none;
-  color: var(--white);
+  color: var(--white2);
 }
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
-  color: var(--blue);
+  color: var(--brown);
 }
 
 .navigation ul li a .icon {
@@ -97,7 +98,7 @@
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 35px 35px 0 10px var(--white);
+  box-shadow: 35px 35px 0 10px var(--gray);
   pointer-events: none;
 }
 .navigation ul li:hover a::after,
@@ -110,7 +111,7 @@
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  box-shadow: 35px -35px 0 10px var(--white);
+  box-shadow: 35px -35px 0 10px var(--gray);
   pointer-events: none;
 }
 .main {
@@ -167,7 +168,7 @@
   position: relative;
   font-weight: 500;
   font-size: 2.5rem;
-  color: var(--blue);
+  color: var(--brown);
 }
 
 .cardBox .card .cardName {
@@ -182,7 +183,7 @@
 }
 
 .cardBox .card:hover {
-  background: var(--blue);
+  background: var(--brown);
 }
 .cardBox .card:hover .numbers,
 .cardBox .card:hover .cardName,
@@ -213,12 +214,12 @@
 }
 .cardHeader h2 {
   font-weight: 600;
-  color: var(--blue);
+  color: var(--brown);
 }
 .cardHeader .btn {
   position: relative;
   padding: 5px 10px;
-  background: var(--blue);
+  background: var(--brown);
   text-decoration: none;
   color: var(--white);
   border-radius: 6px;
@@ -239,7 +240,7 @@
   border-bottom: none;
 }
 .details .recentOrders table tbody tr:hover {
-  background: var(--blue);
+  background: var(--brown);
   color: var(--white);
 }
 .details .recentOrders table tr td {
@@ -382,7 +383,15 @@
   margin-left: 10px;
   margin-bottom: -2px;
 }
-
+.home-brand {
+  margin-top: 10px;
+}
+.brand-title {
+  margin-top: 23px;
+  margin-left: 9px;
+  font-size: 18px;
+  color: var(--white2);
+}
 @media (max-width: 991px) {
   .navigation {
     left: -300px;
