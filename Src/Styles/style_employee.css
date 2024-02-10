@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/alarm-clock");
 
 * {
   font-family: "Poppins", sans-serif;
@@ -9,10 +10,11 @@
 
 :root {
   --blue: #5f5449;
-  --white: #fff;
+  --white: #ffffffd0;
   --gray: #f5f5f5;
   --black1: #222;
   --black2: #999;
+  --gray2: #2c2722;
 }
 .navigation {
   position: fixed;
@@ -254,9 +256,12 @@
 }
 .attendance {
   background-color: var(--gray);
+  background-image: url(/assets/Images/bean2.png);
+  position: relative;
 }
 .attendance-nav {
   border-bottom: 1px solid rgb(182, 181, 181);
+  background-color: #fff;
 }
 .attendance-inner {
   margin: 0px 40px 0px 30px;
@@ -264,7 +269,7 @@
   justify-content: space-between;
 }
 .attendance-inner a {
-  color: black;
+  color: var(--gray2);
 }
 .navbrand {
   height: 90px;
@@ -274,9 +279,11 @@
   height: 90px;
 }
 .attendance-container {
+  backdrop-filter: blur(8px);
   transform: translate(-50%, -50%);
-  position: absolute;
+  position: fixed;
   top: 50%;
+  z-index: inherit;
   left: 50%;
   /* border: 1px solid red; */
   padding: 90px;
@@ -289,6 +296,7 @@
   text-align: center;
   font-size: 30px;
   margin-top: 30px;
+  color: var(--gray2);
 }
 .attendance-image {
   text-align: center;
@@ -305,11 +313,26 @@
   margin-top: 20px;
   font-size: 20px;
 }
+.timein {
+  background-color: #3d362f;
+  color: #fff;
+}
+.timeout {
+  border: 1px solid var(--gray2);
+}
+
 .time {
-  padding-top: 30px;
-  margin-right: 60px;
-  font-size: 30px;
+  margin-top: 20px;
   font-weight: 700;
+  font-size: 25px;
+}
+.date {
+  margin-top: -20px;
+  font-size: 15px;
+}
+.time-div {
+  margin-right: 30px;
+  color: var(--gray2);
 }
 @media (max-width: 991px) {
   .navigation {
