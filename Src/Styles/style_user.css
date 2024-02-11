@@ -210,9 +210,12 @@ footer {
   width: 200px;
   margin-top: 50px;
 }
-.subnav ion-icon {
-  font-size: 40px;
+.subnav  {
+  
   margin-left: 140px;
+}
+.subnav ion-icon{
+  font-size: 40px;
 }
 .subnav-coffee ion-icon {
   font-size: 30px;
