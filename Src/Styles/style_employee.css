@@ -1,21 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/alarm-clock");
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --brown: #473f38;
+  --brown: #3a342e;
   --white: #ffffffd0;
   --white2: #ffffff;
   --gray: #f5f5f5;
   --black1: #222;
   --black2: #999;
-  --gray2: #2c2722;
+  --gray2: #1b1815;
 }
 .navigation {
   position: fixed;
@@ -201,7 +201,16 @@
 .details .recentOrders {
   position: relative;
   display: grid;
-  min-height: 500px;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+.container-box {
+  margin: 20px 50px;
+  grid-gap: 30px;
+  position: relative;
+  display: grid;
   background: var(--white);
   padding: 20px;
   box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
@@ -391,6 +400,48 @@
   margin-left: 9px;
   font-size: 18px;
   color: var(--white2);
+}
+.signoutdiv {
+  text-align: center;
+  padding: 60px;
+}
+.signoutdiv h1 {
+  margin: 40px;
+  text-transform: uppercase;
+}
+.signoutdiv img {
+  border-radius: 50%;
+}
+.signoutdiv h4 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 800;
+}
+.signoutdiv h5 {
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: 400;
+}
+.signoutdiv h6 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.signoutdiv button {
+  border: 1px solid #222;
+  background-color: #fff;
+  padding: 7px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  margin: 50px;
+}
+.signoutdiv button:hover {
+  background-color: #2c2722;
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.2);
 }
 @media (max-width: 991px) {
   .navigation {
