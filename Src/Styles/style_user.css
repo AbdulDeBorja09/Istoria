@@ -174,16 +174,13 @@ footer {
 .curious h1 {
   font-weight: 700;
 }
-.viewmore .btn {
-  border: 1px solid #231f20;
-  margin-bottom: 100px;
-}
+
 .button {
   display: flex;
   justify-content: end;
   margin-top: 50px;
 }
-.button .btn {
+.stylishbtn .btn {
   border: 1px solid #231f20;
 }
 .menu_title h1 {
@@ -450,13 +447,130 @@ footer {
   border: 1px solid #231f20;
 }
 .viewdetails {
+  border: none;
+  background: none;
+  cursor: pointer;
   text-decoration: none;
   color: #231f20;
+}
+
+.viewdetails span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
   font-size: 10px;
+}
+
+.viewdetails svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  font-size: 5px;
+}
+
+.viewdetails:hover svg {
+  transform: translateX(0);
+}
+
+.viewdetails:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.viewdetails:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .viewbtn button {
   margin-top: 7px;
 }
+.stylishbtn,
+.stylishbtn2,
+.stylishbtn3 {
+  text-align: center;
+  --color: var(--font);
+  font-family: inherit;
+  display: inline-block;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  text-decoration: none;
+}
+
+.stylishbtn:before,
+.stylishbtn2:before,
+.stylishbtn3:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  border-radius: 50%;
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.stylishbtn:hover,
+.stylishbtn2:hover,
+.stylishbtn3:hover {
+  color: #fff;
+}
+
+.stylishbtn:hover:before,
+.stylishbtn2:hover:before,
+.stylishbtn3:hover:before {
+  top: -30px;
+  left: -30px;
+}
+.stylishbtn {
+  width: 9em;
+}
+.stylishbtn2 {
+  width: 11em;
+}
+.stylishbtn3 {
+  width: 9em;
+}
+.stylishbtn:before {
+  width: 200px;
+}
+.stylishbtn2:before {
+  width: 300px;
+}
+.stylishbtn3:before {
+  width: 300px;
+}
+
 .viewbtn a {
   margin-top: 7px;
   font-size: 13px;
