@@ -64,6 +64,7 @@
   color: #231f20;
   font-size: 12px;
   transform: skew(40deg);
+  font-weight: 500;
 }
 .navigations ul li:hover {
   transform: scale(1.1);
@@ -199,6 +200,7 @@ footer {
   text-align: center;
   font-size: 50px;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 .products h1 {
   text-align: center;
@@ -210,11 +212,10 @@ footer {
   width: 200px;
   margin-top: 50px;
 }
-.subnav  {
-  
+.subnav {
   margin-left: 140px;
 }
-.subnav ion-icon{
+.subnav ion-icon {
   font-size: 40px;
 }
 .subnav-coffee ion-icon {
