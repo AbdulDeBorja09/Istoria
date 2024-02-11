@@ -682,7 +682,7 @@ footer {
   margin: 0px 100px;
 }
 .contact-col1 {
-  width: 40%;
+  width: 45%;
 }
 .contact-col1 form {
   display: flex;
@@ -814,6 +814,7 @@ footer {
 }
 .contact-col2 {
   width: 30%;
+  margin-left: 60px;
 }
 .contact-col3 h1 {
   font-weight: 700;
