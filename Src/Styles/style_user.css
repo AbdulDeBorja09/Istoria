@@ -190,7 +190,6 @@ footer {
   font-weight: 700;
   text-align: center;
   font-size: 50px;
-  margin-top: 90px;
 }
 .navprofile a {
   text-decoration: none;
@@ -202,8 +201,6 @@ footer {
   font-weight: 700;
   text-align: center;
   font-size: 50px;
-  margin-bottom: 20px;
-  margin-top: 50px;
 }
 .products h1 {
   text-align: center;
@@ -228,6 +225,13 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.subnav-global {
+  display: flex;
+  justify-content: flex-start;
+}
+.subnav-global ion-icon {
+  font-size: 30px;
+}
 .sortby {
   border: 1px solid #231f20;
   margin-top: -5px;
@@ -237,6 +241,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
+  margin-top: 60px;
 }
 .menu-flex a {
   text-decoration: none;
@@ -359,7 +364,7 @@ footer {
 .viewpage-title-coffe {
   text-align: center;
   font-weight: 700;
-  margin-top: 80px;
+  font-size: 50px;
 }
 .view-div-2 {
   padding: 40px;
