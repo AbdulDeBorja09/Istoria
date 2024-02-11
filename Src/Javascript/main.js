@@ -25,8 +25,7 @@ var month = currentDate.getMonth() + 1; // Months are zero based
 var year = currentDate.getFullYear();
 
 // Format the date as desired (e.g., DD-MM-YYYY)
-var formattedDate = day + "/" + month + "/" + year;
+var formattedDate = month + "/" + day + "/" + year;
 
 // Display the formatted date in the specified HTML element
 document.getElementById("currentDate").innerHTML = formattedDate;
-
