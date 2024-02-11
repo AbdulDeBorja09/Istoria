@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  letter-spacing: 2px;
 }
 
 :root {
@@ -136,19 +137,21 @@
   text-align: justify;
 }
 footer {
-  border-top: 3px solid black;
+  border-top: 1px solid #231f20;
 }
 .footer {
-  margin: 100px 100px 50px 100px;
+  margin: 50px 100px 50px 100px;
   display: flex;
   justify-content: space-between;
 }
 .colm1 h5 {
   margin-top: 20px;
+  font-size: 12px;
 }
 .colm1 h6 {
-  margin-top: 50px;
-  line-height: 30px;
+  margin-top: 20px;
+  line-height: 18px;
+  font-size: 9px;
 }
 .colm1 h4 {
   font-weight: 700;
@@ -281,8 +284,8 @@ footer {
 .sidebar p {
   transform: rotate(270deg);
   font-size: 10px;
-  margin-top: 55px;
-  margin-left: -10px;
+  margin-top: 60px;
+  margin-left: -22px;
   font-weight: 700;
 }
 .coffe-flex {
@@ -331,7 +334,6 @@ footer {
   background-color: #f6f3f1;
   padding: 40px;
 }
-
 .modal-div-2 h1 {
   font-weight: 700;
   font-size: 20px;
@@ -354,6 +356,44 @@ footer {
   background-color: #231f20;
   color: white;
 }
+.viewpage-title-coffe {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 80px;
+}
+.view-div-2 {
+  padding: 40px;
+}
+.view-div-2 h1 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.view-div-2 h5 {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.view-div-2 h6 {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.view-div-2 label {
+  font-size: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.view-div-2 input[type="radio"]:checked + label {
+  background-color: #231f20;
+  color: white;
+}
+.view-div-2 {
+  overflow-y: auto;
+  height: 100%;
+}
+.viewpagediv {
+  height: 600px;
+}
+
 .star ion-icon {
   font-size: 15px;
 }
@@ -373,7 +413,23 @@ footer {
   line-height: 20px;
 }
 
-.addonts-table tbody tr {
+.viewaddonts-table tbody tr {
+  margin-top: -10px;
+  background-color: white;
+}
+.viewaddonts-table tbody tr td h5 {
+  font-size: 10px;
+}
+
+.viewaddonts-table tbody tr input[type="checkbox"]:checked + label {
+  background-color: #231f20;
+  color: white;
+}
+.viewaddonts-table {
+  line-height: 20px;
+}
+
+.viewaddonts-table tbody tr {
   margin-top: -10px;
 }
 .add-to-traybtn {
@@ -382,11 +438,86 @@ footer {
   font-weight: 700;
   border: 1px solid #231f20;
 }
+.add-to-tray {
+  font-size: 13px;
+  margin-top: -10px;
+  font-weight: 700;
+  border: 1px solid #231f20;
+}
 .viewdetails {
   text-decoration: none;
   color: #231f20;
   font-size: 10px;
 }
+.viewbtn button {
+  margin-top: 7px;
+}
+.viewbtn a {
+  margin-top: 7px;
+  font-size: 13px;
+  border: 1px solid #231f20;
+  font-weight: 700;
+}
 .nega {
   margin-left: -25px;
+}
+.review {
+  margin-top: 50px;
+}
+.review h1 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.overallrating p {
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.starstatic {
+  display: flex;
+  flex-direction: row;
+}
+.starstatic ion-icon {
+  margin-right: 5px;
+}
+.guidestar ion-icon {
+  font-size: 9px;
+}
+.detailrating {
+  border-left: 2px solid #231f20;
+  line-height: 12px;
+}
+.reviewtop img {
+  width: 70px;
+  height: 70px;
+}
+.reviewtop {
+  display: flex;
+}
+.reviewdetstars {
+  display: flex;
+}
+.reviewdetstars p {
+  font-size: 12px;
+  margin-left: 10px;
+}
+.reviewdets {
+  line-height: 20px;
+  margin-left: 10px;
+}
+.reviewdets h6 {
+  font-weight: 700;
+  margin-top: -10px;
+  font-size: 12px;
+}
+.reviewdets h5 {
+  font-size: 10px;
+  font-weight: 500;
+}
+.reviewbot p {
+  font-size: 15px;
+  width: 550px;
+}
+.reviewdetstars ion-icon {
+  margin-right: 3px;
 }
