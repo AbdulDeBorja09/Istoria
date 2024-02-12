@@ -43,12 +43,7 @@
 }
 .navigations ul li {
   list-style: none;
-
   transition: 0.3s ease-in-out;
-}
-.navigations ul li a:hover li{
-  
-  transform: scale(1.1);
 }
 .navigations ul li:hover a {
   transform: skew(0deg);
@@ -62,6 +57,7 @@
   background-color: white;
   transform: skew(-40deg);
   transition: 0.3s ease;
+  border: 1px solid white;
 }
 
 .navigations ul li a {
