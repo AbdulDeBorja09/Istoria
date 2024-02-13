@@ -101,7 +101,19 @@
           </div>
           <div class="col2">
             <div class="inner">
-              <input type="text" />
+              <div class="quantity">
+                <button id="minusBtn">-</button>
+                <input
+                  type="number"
+                  id="quantityInput"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                  disabled
+                />
+                <button id="addBtn">+</button>
+              </div>
               <h6>100.00</h6>
             </div>
           </div>
@@ -122,11 +134,24 @@
           </div>
           <div class="col2">
             <div class="inner">
-              <input type="text" />
+              <div class="quantity">
+                <button id="minusBtn">-</button>
+                <input
+                  type="number"
+                  id="quantityInput"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                  disabled
+                />
+                <button id="addBtn">+</button>
+              </div>
               <h6>100.00</h6>
             </div>
           </div>
         </div>
+
         <div class="product">
           <div class="col1">
             <img src="../assets/Images/5.png" />
@@ -142,11 +167,24 @@
           </div>
           <div class="col2">
             <div class="inner">
-              <input type="text" />
+              <div class="quantity">
+                <button id="minusBtn">-</button>
+                <input
+                  type="number"
+                  id="quantityInput"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                  disabled
+                />
+                <button id="addBtn">+</button>
+              </div>
               <h6>100.00</h6>
             </div>
           </div>
         </div>
+
         <div class="product">
           <div class="col1">
             <img src="../assets/Images/5.png" />
@@ -162,7 +200,19 @@
           </div>
           <div class="col2">
             <div class="inner">
-              <input type="text" />
+              <div class="quantity">
+                <button id="minusBtn">-</button>
+                <input
+                  type="number"
+                  id="quantityInput"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                  disabled
+                />
+                <button id="addBtn">+</button>
+              </div>
               <h6>100.00</h6>
             </div>
           </div>
@@ -214,6 +264,42 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Get the elements
+      const minusBtn = document.getElementById("minusBtn");
+      const addBtn = document.getElementById("addBtn");
+      const quantityInput = document.getElementById("quantityInput");
+
+      // Add event listener to minus button
+      minusBtn.addEventListener("click", () => {
+        let currentQuantity = parseInt(quantityInput.value);
+        if (currentQuantity > 1) {
+          quantityInput.value = currentQuantity - 1;
+          updateButtonState();
+        }
+      });
+
+      // Add event listener to add button
+      addBtn.addEventListener("click", () => {
+        let currentQuantity = parseInt(quantityInput.value);
+        if (currentQuantity < 10) {
+          quantityInput.value = currentQuantity + 1;
+          updateButtonState();
+        }
+      });
+
+      // Function to update button state
+      function updateButtonState() {
+        let currentQuantity = parseInt(quantityInput.value);
+        // Enable or disable minus button based on quantity
+        minusBtn.disabled = currentQuantity === 1;
+        // Enable or disable add button based on quantity
+        addBtn.disabled = currentQuantity === 10;
+        // Apply/disable styles based on disabled state
+        minusBtn.classList.toggle("disabled", currentQuantity === 1);
+        addBtn.classList.toggle("disabled", currentQuantity === 10);
+      }
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -227,7 +313,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="/Src/Javascript/index.js"></script>
-    <script src="/Src/Javascript/main.js"></script>
+
+    <script src="../Src/Javascript/main.js"></script>
   </body>
 </html>
