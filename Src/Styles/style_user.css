@@ -398,7 +398,7 @@ footer {
   font-size: 10px;
   margin-bottom: 10px;
 }
-.view-div-2 label {
+ss .view-div-2 label {
   font-size: 10px;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -1420,4 +1420,188 @@ footer {
 .checkoutbuttonactive:before {
   background: #3a0ca3;
   transition: background 0s;
+}
+.reciept .reciept-title h1 {
+  font-weight: 700;
+  text-align: center;
+}
+.reciept .return {
+  display: flex;
+  justify-content: end;
+  margin: 0px 150px;
+}
+.reciept {
+  margin-bottom: 100px;
+}
+
+.reciept .return a {
+  border: 0px;
+  background-color: white;
+  font-size: 13px;
+  border-bottom: 1px solid #231f20;
+  text-decoration: none;
+  color: #231f20;
+}
+.reciept .maindiv {
+  margin: 0px 400px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.reciept .maindiv .col1 {
+  width: 35%;
+}
+.reciept .maindiv .col2 {
+  width: 55%;
+  margin-top: 0px 100px;
+}
+.reciept .maindiv .col1 .box {
+  border: 1px solid #231f20;
+  border-radius: 7px;
+  padding: 35px;
+  height: 665px;
+}
+.reciept .maindiv .col1 .date h5 {
+  font-size: 11px;
+}
+.reciept .maindiv .col1 .date h6 {
+  font-size: 11px;
+}
+.reciept .maindiv .col1 .details h1 {
+  font-size: 17px;
+  font-weight: 700;
+}
+.reciept .maindiv .col1 .details h2 {
+  font-weight: 700;
+  font-size: 13px;
+}
+.reciept .maindiv .col1 .total .sub {
+  display: flex;
+  justify-content: space-between;
+}
+.reciept .maindiv .col1 .total .sub h1 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.reciept .maindiv .col1 .total .sub h2 {
+  font-size: 12px;
+  font-weight: 700;
+}
+.reciept .maindiv .col1 .total h3 {
+  font-size: 9px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.reciept .maindiv .col1 .box .total {
+  margin-top: 350px;
+}
+.reciept .maindiv .col1 .total h4 {
+  font-size: 9px;
+  font-weight: 600;
+}
+.reciept .maindiv .col1 .total {
+  margin-top: 20px;
+}
+.reciept .maindiv .col1 .box .images {
+  text-align: center;
+  display: flex;
+  margin: 0px 70px;
+  margin-bottom: 20px;
+}
+.reciept .maindiv .col1 .box .images .img1 {
+  width: 70px;
+}
+.reciept .maindiv .col1 .box .images .img2 {
+  width: 70px;
+}
+
+.reciept .maindiv .col2 .heading {
+  display: flex;
+}
+.reciept .maindiv .col2 .heading h1 {
+  font-weight: 700;
+  font-size: 23px;
+}
+.reciept .maindiv .col2 .heading h2 {
+  font-weight: 700;
+  font-size: 13px;
+  padding: 9px 0px 0px 30px;
+}
+.reciept .maindiv .col2 .row {
+  display: flex;
+  justify-content: space-between;
+}
+.reciept .maindiv .col2 .row textarea {
+  width: 98%;
+  margin-top: 25px;
+  border: 1px solid #231f20;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 9px;
+  cursor: default;
+  margin-left: 10px;
+}
+.reciept .maindiv .col2 .row2 input {
+  width: 102%;
+  margin-top: 15px;
+  border: 1px solid #231f20;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 9px;
+  cursor: default;
+  margin-left: -2px;
+}
+.reciept .maindiv .col2 .row input {
+  width: 48%;
+  margin-top: 15px;
+  border: 1px solid #231f20;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 9px;
+  cursor: default;
+  margin-left: 10px;
+}
+.reciept .maindiv .col2 .row input::placeholder,
+.reciept .maindiv .col2 .row textarea::placeholder {
+  font-size: 9px;
+  font-weight: 700;
+  color: #231f20;
+  text-transform: uppercase;
+}
+.reciept .maindiv .col2 iframe {
+  width: 102%;
+
+  margin-top: 30px;
+}
+.reciept .maindiv .col2 .address {
+  display: flex;
+  margin-top: 10px;
+}
+.reciept .maindiv .col2 .address img {
+  width: 30px;
+  height: 30px;
+}
+.reciept .maindiv .col2 .address p {
+  font-size: 10px;
+
+  text-transform: uppercase;
+}
+.reciept .maindiv .col2 h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+.reciept .maindiv .col2 .status img {
+  width: 90px;
+  margin: 10px 0px 20px 0px;
+}
+.reciept .maindiv .col2 .status {
+  text-align: center;
+}
+.reciept .maindiv .col2 .status h2 {
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid #231f20;
+  padding: 10px;
+  border-radius: 7px;
 }
