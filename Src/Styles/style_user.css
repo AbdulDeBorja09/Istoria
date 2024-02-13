@@ -1020,7 +1020,7 @@ footer {
   font-size: 10px;
   margin-top: 20px;
 }
-.lowertray .col2 .lower button {
+.lowertray .col2 .lower a {
   width: 70%;
   margin-top: 15px;
   margin-left: -3px;
