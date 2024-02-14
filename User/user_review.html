@@ -69,12 +69,12 @@
       </div>
       <h1>SEND US A REVIEW!</h1>
       <div class="reviewform">
-        <div class="rating">
-          <span class="star" data-value="1">&#9733;</span>
-          <span class="star" data-value="2">&#9733;</span>
-          <span class="star" data-value="3">&#9733;</span>
-          <span class="star" data-value="4">&#9733;</span>
-          <span class="star" data-value="5">&#9733;</span>
+        <div class="ratingsss">
+          <span class="rating-star" data-value="1">&#9733;</span>
+          <span class="rating-star" data-value="2">&#9733;</span>
+          <span class="rating-star" data-value="3">&#9733;</span>
+          <span class="rating-star" data-value="4">&#9733;</span>
+          <span class="rating-star" data-value="5">&#9733;</span>
         </div>
         <div class="forms">
           <input type="text" name="" id="" placeholder="USERNAME" />
@@ -92,30 +92,42 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const stars = document.querySelectorAll(".star");
-        const rating = document.querySelector(".rating");
+      function initializeStarRating() {
+        const stars = document.querySelectorAll(".rating-star");
+        const ratingValue = document.getElementById("rating-value");
+        let rating;
 
         stars.forEach((star) => {
-          star.addEventListener("click", function () {
-            const value = parseInt(star.getAttribute("data-value"));
-            rating.setAttribute("data-rating", value);
-            updateStars();
+          star.addEventListener("click", () => {
+            rating = star.getAttribute("data-value");
+            ratingValue.textContent = `You rated ${rating} stars.`;
+            highlightSelectedStars(rating);
+          });
+
+          star.addEventListener("mouseover", () => {
+            resetStarsColor();
+            highlightSelectedStars(star.getAttribute("data-value"));
+          });
+
+          star.addEventListener("mouseout", () => {
+            resetStarsColor();
+            highlightSelectedStars(rating);
           });
         });
 
-        function updateStars() {
-          const value = parseInt(rating.getAttribute("data-rating"));
+        function resetStarsColor() {
           stars.forEach((star) => {
-            const starValue = parseInt(star.getAttribute("data-value"));
-            if (starValue <= value) {
-              star.classList.add("active");
-            } else {
-              star.classList.remove("active");
-            }
+            star.style.color = "#a6a6a6"; // Corrected color value
           });
         }
-      });
+
+        function highlightSelectedStars(value) {
+          for (let i = 0; i < value; i++) {
+            stars[i].style.color = "#231f20";
+          }
+        }
+      }
+      window.addEventListener("load", initializeStarRating);
     </script>
 
     <div style="padding: 150px"></div>

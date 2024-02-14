@@ -155,11 +155,12 @@ p {
 .curious p {
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 60px 200px;
+  margin: 60px 50px;
   text-align: justify;
 }
 footer {
   border-top: 1px solid var(--browncolor);
+  text-transform: uppercase;
 }
 footer a {
   text-decoration: none;
@@ -2087,26 +2088,14 @@ footer a {
 .review-title h1 {
   font-weight: 700;
 }
-
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  margin-bottom: 20px;
-}
-.rating > span {
+.rating-star {
+  color: gray;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 30px;
   font-size: 50px;
+}
 
-  cursor: pointer;
-  color: #ccc;
-}
-.rating > span:hover,
-.rating > span:hover ~ span {
-  color: var(--browncolor);
-}
-.rating > span.active,
-.rating > span.active ~ span {
-  color: var(--browncolor);
-}
 .reviewform {
   margin: 50px 600px;
 }

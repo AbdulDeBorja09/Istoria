@@ -69,17 +69,23 @@
       <div class="contact-flex">
         <div class="contact-col1">
           <form action="post">
-            <input type="text" name="name" placeholder="NAME" />
-            <input type="text" name="email" placeholder="EMAIL" />
-            <input type="number" name="number" placeholder="PHONE NUMBER" />
+            <input type="text" name="name" placeholder="NAME" required />
+            <input type="text" name="email" placeholder="EMAIL" required />
+            <input
+              type="number"
+              name="number"
+              placeholder="PHONE NUMBER"
+              required
+            />
             <textarea
               name=""
               id=""
               cols="30"
               rows="7"
-              placeholder="COMMENT"
+              placeholder="MESSAGE"
+              required
             ></textarea>
-            <button class="fancy">
+            <button class="fancy" type="submit">
               <span class="top-key"></span>
               <span class="text">SEND A MESSAGE</span>
               <span class="bottom-key-1"></span>
@@ -109,9 +115,15 @@
           <div class="about-follow">
             <h1>FOLLOW US</h1>
             <div class="contact-socmeds">
-              <img src="../assets/Images/email.png" alt="" />
-              <img src="../assets/Images/ig.png" alt="" />
-              <img src="../assets/Images/fb.png" alt="" />
+              <a href="mailto:BUSINESS.ISTORIA@GMAIL.COM"
+                ><img src="../assets/Images/email.png" alt="" target="_blank"
+              /></a>
+              <a href="https://www.instagram.com/istoriacoffee/" target="_blank"
+                ><img src="../assets/Images/ig.png" alt=""
+              /></a>
+              <a href="https://www.facebook.com/coffee.istoria" target="_blank"
+                ><img src="../assets/Images/fb.png" alt=""
+              /></a>
             </div>
           </div>
         </div>
@@ -130,7 +142,7 @@
         </div>
       </div>
     </div>
-    <div style="padding: 50px"></div>
+    <div style="padding: 70px"></div>
     <footer>
       <div class="footer">
         <div class="colm1">
