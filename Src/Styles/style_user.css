@@ -8,7 +8,7 @@
 }
 
 :root {
-  --font: #231f20;
+  --browncolor: #231f20;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -20,12 +20,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="time"]::selection:hover {
-  color: #231f20;
-  background-color: #231f20;
+  color: var(--browncolor);
+  background-color: var(--browncolor);
 }
 input[type="time"]:active {
-  background-color: #231f20;
-  color: #231f20;
+  background-color: var(--browncolor);
+  color: var(--browncolor);
 }
 
 .istoria {
@@ -68,7 +68,7 @@ input[type="time"]:active {
 }
 .navigations ul li {
   text-decoration: none;
-  color: #231f20;
+  color: var(--browncolor);
   margin: 0px 25px;
   padding: 3px 20px;
   background-color: white;
@@ -80,7 +80,7 @@ input[type="time"]:active {
 .navigations ul li a {
   display: inline-block;
   text-decoration: none;
-  color: #231f20;
+  color: var(--browncolor);
   font-size: 12px;
   transform: skew(40deg);
   font-weight: 500;
@@ -132,7 +132,7 @@ input[type="time"]:active {
   margin-top: 150px;
 }
 .letusdesc {
-  color: #231f20;
+  color: var(--browncolor);
   padding: 90px;
 }
 .letusdesc h1 {
@@ -156,7 +156,7 @@ input[type="time"]:active {
   text-align: justify;
 }
 footer {
-  border-top: 1px solid #231f20;
+  border-top: 1px solid var(--browncolor);
 }
 .footer {
   margin: 50px 100px 50px 100px;
@@ -174,7 +174,7 @@ footer {
 }
 .colm1 h4 {
   font-weight: 700;
-  border-bottom: 3px solid #231f20;
+  border-bottom: 3px solid var(--browncolor);
   font-size: 20px;
 }
 .colm2 h5 {
@@ -200,7 +200,7 @@ footer {
   margin-top: 50px;
 }
 .stylishbtn .btn {
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
 }
 .menu_title h1 {
   font-weight: 700;
@@ -209,7 +209,7 @@ footer {
 }
 .navprofile a {
   text-decoration: none;
-  color: #231f20;
+  color: var(--browncolor);
   padding: 0px 10px;
   font-size: 20px;
 }
@@ -224,7 +224,7 @@ footer {
   margin-top: 80px;
 }
 .viewall a {
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   width: 200px;
   margin-top: 50px;
 }
@@ -249,7 +249,7 @@ footer {
   font-size: 30px;
 }
 .sortby {
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   margin-top: -5px;
 }
 
@@ -261,7 +261,7 @@ footer {
 }
 .menu-flex a {
   text-decoration: none;
-  color: var(--font);
+  color: var(--browncolor);
 }
 .menu-flex .box {
   padding: 80px;
@@ -289,7 +289,7 @@ footer {
   text-align: center;
   width: 100px;
   height: 5px;
-  background-color: #231f20;
+  background-color: var(--browncolor);
 }
 .sidebar {
   display: flex;
@@ -333,7 +333,7 @@ footer {
   color: white;
 }
 .coffe-flex .box:hover .enlarge ion-icon {
-  color: #231f20;
+  color: var(--browncolor);
 }
 .coffe-flex .box:hover img {
   transform: scale(1.2);
@@ -374,7 +374,7 @@ footer {
   margin-right: 20px;
 }
 .modal-div-2 input[type="radio"]:checked + label {
-  background-color: #231f20;
+  background-color: var(--browncolor);
   color: white;
 }
 .viewpage-title-coffe {
@@ -404,7 +404,7 @@ ss .view-div-2 label {
   margin-right: 20px;
 }
 .view-div-2 input[type="radio"]:checked + label {
-  background-color: #231f20;
+  background-color: var(--browncolor);
   color: white;
 }
 .view-div-2 {
@@ -427,7 +427,7 @@ ss .view-div-2 label {
 }
 
 .addonts-table tbody tr input[type="checkbox"]:checked + label {
-  background-color: #231f20;
+  background-color: var(--browncolor);
   color: white;
 }
 .addonts-table {
@@ -443,7 +443,7 @@ ss .view-div-2 label {
 }
 
 .viewaddonts-table tbody tr input[type="checkbox"]:checked + label {
-  background-color: #231f20;
+  background-color: var(--browncolor);
   color: white;
 }
 .viewaddonts-table {
@@ -457,20 +457,20 @@ ss .view-div-2 label {
   font-size: 13px;
   margin-top: -50px;
   font-weight: 700;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
 }
 .add-to-tray {
   font-size: 13px;
   margin-top: -10px;
   font-weight: 700;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
 }
 .viewdetails {
   border: none;
   background: none;
   cursor: pointer;
   text-decoration: none;
-  color: #231f20;
+  color: var(--browncolor);
 }
 
 .viewdetails span {
@@ -527,7 +527,7 @@ ss .view-div-2 label {
 .stylishbtn2,
 .stylishbtn3 {
   text-align: center;
-  --color: var(--font);
+  --color: var(--browncolor);
   font-family: inherit;
   display: inline-block;
   height: 2.6em;
@@ -593,7 +593,7 @@ ss .view-div-2 label {
 .viewbtn a {
   margin-top: 7px;
   font-size: 13px;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   font-weight: 700;
 }
 .nega {
@@ -622,7 +622,7 @@ ss .view-div-2 label {
   font-size: 9px;
 }
 .detailrating {
-  border-left: 2px solid #231f20;
+  border-left: 2px solid var(--browncolor);
   line-height: 12px;
 }
 .reviewtop img {
@@ -715,7 +715,7 @@ ss .view-div-2 label {
 .contact-col1 form textarea {
   padding: 10px;
   font-size: 12px;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   margin-bottom: 20px;
 }
 
@@ -726,7 +726,7 @@ ss .view-div-2 label {
 }
 .fancy {
   background-color: transparent;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   border-radius: 0;
   box-sizing: border-box;
   color: #fff;
@@ -889,7 +889,7 @@ ss .view-div-2 label {
 .tray-title a {
   text-decoration: none;
   border-bottom: 1px solid black;
-  color: #231f20;
+  color: var(--browncolor);
   font-size: 10px;
 }
 .tray-item-title {
@@ -915,13 +915,13 @@ ss .view-div-2 label {
   margin-left: 60px;
 }
 .trayline {
-  background-color: #231f20;
+  background-color: var(--browncolor);
   height: 1px;
   margin-left: 5px;
   margin-top: 8px;
 }
 .product {
-  border-bottom: 1px solid #231f20;
+  border-bottom: 1px solid var(--browncolor);
   margin-left: 5px;
   display: flex;
 }
@@ -999,7 +999,7 @@ ss .view-div-2 label {
 .product .col2 .inner input[type="number"]:disabled,
 .view-div-2 .quantity input[type="number"]:disabled {
   background-color: white;
-  color: #231f20;
+  color: var(--browncolor);
   font-weight: 700;
   border-color: #ddd;
   border: 0px;
@@ -1038,7 +1038,7 @@ ss .view-div-2 label {
 }
 .product .col2 .inner .quantity button:hover,
 .view-div-2 .quantity button:hover {
-  background-color: #231f20;
+  background-color: var(--browncolor);
   color: #fff;
 }
 .tray-innerdiv {
@@ -1058,12 +1058,12 @@ ss .view-div-2 label {
   font-size: 11px;
 }
 .lowertray .col1 textarea {
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   border-radius: 4px;
   padding: 20px;
 }
 .lowertray .col1 textarea::placeholder {
-  color: #231f20;
+  color: var(--browncolor);
   font-size: 8px;
 }
 
@@ -1100,7 +1100,7 @@ ss .view-div-2 label {
 }
 
 .stylish1 {
-  --color: var(--font);
+  --color: var(--browncolor);
   display: inline-block;
   width: 8em;
   position: relative;
@@ -1125,7 +1125,7 @@ ss .view-div-2 label {
 }
 .stylish1:hover {
   color: #fff;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
 }
 .stylish1:before {
   top: 100%;
@@ -1137,7 +1137,7 @@ ss .view-div-2 label {
   left: -30px;
 }
 .stylish1:active:before {
-  background: #231f20;
+  background: var(--browncolor);
   transition: background 0s;
 }
 .stylish2 {
@@ -1146,14 +1146,14 @@ ss .view-div-2 label {
   width: 8em;
   position: relative;
   overflow: hidden;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   transition: color 0.5s;
   z-index: 1;
   font-size: 12px;
   border-radius: 6px;
   font-weight: 500;
   color: var(--color);
-  background-color: #231f20;
+  background-color: var(--browncolor);
 }
 .stylish2:before {
   content: "";
@@ -1165,9 +1165,9 @@ ss .view-div-2 label {
   border-radius: 50%;
 }
 .stylish2:hover {
-  color: #231f20;
-  border: 1px solid #231f20;
-  background-color: #231f20;
+  color: var(--browncolor);
+  border: 1px solid var(--browncolor);
+  background-color: var(--browncolor);
 }
 .stylish2:before {
   top: 100%;
@@ -1179,7 +1179,7 @@ ss .view-div-2 label {
   left: -30px;
 }
 .stylish1:active:before {
-  background: #231f20;
+  background: var(--browncolor);
   transition: background 0s;
 }
 .checkout-divider {
@@ -1225,7 +1225,7 @@ ss .view-div-2 label {
 }
 .checkout-div1 .inner input,
 .checkout-div1 .inner textarea {
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   border-radius: 9px;
   margin-top: 20px;
   font-size: 12px;
@@ -1236,7 +1236,7 @@ ss .view-div-2 label {
 .checkout-div1 .inner textarea::placeholder {
   font-size: 9px;
   font-weight: 700;
-  color: #231f20;
+  color: var(--browncolor);
 }
 .payment {
   display: flex;
@@ -1244,7 +1244,7 @@ ss .view-div-2 label {
 }
 .payment label {
   font-size: 10px;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   padding: 10px;
   font-weight: 500;
   width: 48%;
@@ -1252,16 +1252,16 @@ ss .view-div-2 label {
   margin-top: 15px;
 }
 .payment input[type="radio"]:checked + label {
-  background-color: #231f20;
+  background-color: var(--browncolor);
   color: white;
 }
 .payment input[type="radio"]:hover + label {
-  background-color: #231f20;
+  background-color: var(--browncolor);
   color: white;
 }
 .checkout-div1 .gcash {
   font-size: 10px;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   padding: 10px;
   font-weight: 500;
   width: 48%;
@@ -1271,7 +1271,7 @@ ss .view-div-2 label {
 }
 .checkout-div1 .gcash::placeholder {
   font-weight: 500;
-  color: #231f20;
+  color: var(--browncolor);
 }
 
 .checkout-div2 {
@@ -1287,10 +1287,10 @@ ss .view-div-2 label {
 
 .checkout-div2 .return a {
   text-decoration: none;
-  color: #231f20;
+  color: var(--browncolor);
   font-size: 13px;
   font-weight: 500;
-  border-bottom: 1px solid #231f20;
+  border-bottom: 1px solid var(--browncolor);
 }
 .checkout-products {
   height: 450px;
@@ -1309,7 +1309,7 @@ ss .view-div-2 label {
 .checkout-products .inner .products .counter h6 {
   font-size: 11px;
   margin-bottom: -10px;
-  background-color: #231f20;
+  background-color: var(--browncolor);
   color: white;
   width: 18px;
   height: 18px;
@@ -1375,7 +1375,7 @@ ss .view-div-2 label {
 }
 
 .checkoutbutton {
-  --color: var(--font);
+  --color: var(--browncolor);
   display: inline-block;
   line-height: 30px;
   width: 100%;
@@ -1418,7 +1418,7 @@ ss .view-div-2 label {
 }
 
 .checkoutbuttonactive:before {
-  background: #3a0ca3;
+  background: var(--browncolor);
   transition: background 0s;
 }
 .reciept .reciept-title h1 {
@@ -1438,9 +1438,9 @@ ss .view-div-2 label {
   border: 0px;
   background-color: white;
   font-size: 13px;
-  border-bottom: 1px solid #231f20;
+  border-bottom: 1px solid var(--browncolor);
   text-decoration: none;
-  color: #231f20;
+  color: var(--browncolor);
 }
 .reciept .maindiv {
   margin: 0px 400px;
@@ -1456,7 +1456,7 @@ ss .view-div-2 label {
   margin-top: 0px 100px;
 }
 .reciept .maindiv .col1 .box {
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   border-radius: 7px;
   padding: 35px;
   height: 665px;
@@ -1534,7 +1534,7 @@ ss .view-div-2 label {
 .reciept .maindiv .col2 .row textarea {
   width: 98%;
   margin-top: 25px;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   padding: 10px;
   border-radius: 7px;
   font-size: 9px;
@@ -1544,7 +1544,7 @@ ss .view-div-2 label {
 .reciept .maindiv .col2 .row2 input {
   width: 102%;
   margin-top: 15px;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   padding: 10px;
   border-radius: 7px;
   font-size: 9px;
@@ -1554,7 +1554,7 @@ ss .view-div-2 label {
 .reciept .maindiv .col2 .row input {
   width: 48%;
   margin-top: 15px;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   padding: 10px;
   border-radius: 7px;
   font-size: 9px;
@@ -1565,7 +1565,7 @@ ss .view-div-2 label {
 .reciept .maindiv .col2 .row textarea::placeholder {
   font-size: 9px;
   font-weight: 700;
-  color: #231f20;
+  color: var(--browncolor);
   text-transform: uppercase;
 }
 .reciept .maindiv .col2 iframe {
@@ -1601,7 +1601,433 @@ ss .view-div-2 label {
 .reciept .maindiv .col2 .status h2 {
   text-align: center;
   font-size: 13px;
-  border: 1px solid #231f20;
+  border: 1px solid var(--browncolor);
   padding: 10px;
   border-radius: 7px;
+}
+.profile-title h1 {
+  font-weight: 700;
+}
+.logout {
+  margin: 50px 200px;
+  margin-bottom: 250px;
+}
+.profile {
+  display: flex;
+  margin: 50px 200px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.profile .col1 {
+  width: 25%;
+}
+.profile .col1 .top {
+  display: flex;
+  border-bottom: 1px solid var(--browncolor);
+}
+.profile .col2 .top {
+  border-bottom: 1px solid var(--browncolor);
+  display: flex;
+  justify-content: space-between;
+}
+.profile .col2 .top a {
+  color: var(--browncolor);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 10px;
+}
+.profile .col1 .top {
+  display: flex;
+}
+.profile .col1 .top h1 {
+  font-weight: 500;
+  font-size: 15px;
+}
+.profile .col1 .top img {
+  width: 15px;
+  height: 15px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+.profile .col1 .top a {
+  margin-top: -10px;
+}
+.profile .col1 .bottom {
+  margin-top: 50px;
+}
+.profile .col1 .bottom h1 {
+  font-size: 10px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+.profile .col1 .bottom a {
+  --color: var(--browncolor);
+  display: inline-block;
+  width: 20em;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  border-radius: 6px;
+  color: var(--color);
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+  color: var(--browncolor);
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.profile .col1 .bottom a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.profile .col1 .bottom a:hover {
+  color: #fff;
+}
+
+.profile .col1 .bottom a:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.profile .col1 .bottom a:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.profile .col1 .bottom a:active:before {
+  background: var(--browncolor);
+  transition: background 0s;
+}
+
+.profile .col2 {
+  width: 75%;
+}
+.profile .col2 .top {
+  border-bottom: 1px solid var(--browncolor);
+}
+.profile .col2 .top h1 {
+  font-weight: 500;
+  font-size: 15px;
+}
+.profile .col2 .content {
+  margin-top: 10px;
+  height: 590px;
+}
+.profile .col2 .content .inner {
+  height: 100%;
+  overflow-y: auto;
+}
+.profile .col2 .history-div {
+  height: 100%;
+}
+.profile .col2 .content .inner .products {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--browncolor);
+  margin-top: 35px;
+}
+.profile .col2 .content .inner .products .div1 h5 {
+  font-size: 12px;
+  margin: 0;
+  font-weight: 500;
+}
+.profile .col2 .content .inner .products .div1 h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.profile .col2 .content .inner .products .div1 h3 {
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: -5px;
+}
+.profile .col2 .content .inner .products .div1 h4 {
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: -5px;
+}
+.profile .col2 .content .inner .products .div1 h6 {
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.profile .col2 .content .inner .products .div2 {
+  padding-top: 70px;
+}
+.profile .col2 .content .inner .products .div2 a {
+  text-decoration: none;
+  color: var(--browncolor);
+  font-size: 10px;
+}
+
+.profile .col2 .content .inner .products .div2 span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.profile .col2 .content .inner .products .div2 svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  font-size: 5px;
+}
+.profile .col2 .content .inner .products .div2:hover svg {
+  transform: translateX(0);
+}
+
+.profile .col2 .content .inner .products .div2:active svg {
+  transform: scale(0.9);
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.profile
+  .col2
+  .content
+  .inner
+  .products
+  .div2:hover
+  .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logout-button {
+  display: inline-block;
+  margin-top: 350px;
+  width: 200px;
+  height: 35px;
+  border-radius: 7px;
+  border: 1px solid var(--browncolor);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  background-color: var(--browncolor);
+}
+
+.logout-button::before,
+.logout-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.logout-button::before {
+  left: -10px;
+  background: white;
+}
+
+.logout-button::after {
+  right: -10px;
+  background: white;
+}
+
+.logout-button:hover::before,
+.logout-button:hover::after {
+  width: 58%;
+}
+
+.logout-button:hover span {
+  color: var(--browncolor);
+  transition: 0.3s;
+}
+
+.logout-button span {
+  color: white;
+
+  font-size: 11px;
+  transition: all 0.3s ease-in;
+}
+.history-table {
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+.history-table thead tr {
+  font-size: 10px;
+  font-weight: 700;
+}
+.history-table tbody tr {
+  border-bottom: 1px solid var(--browncolor);
+}
+.history-table tr td h1 {
+  font-size: 10px;
+}
+.history-table tr td h2 {
+  font-size: 12px;
+  font-weight: 700;
+}
+.history-table tr td a {
+  font-size: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--browncolor);
+  border: 1px solid white;
+}
+.history-table tr td a {
+  font-weight: 500;
+}
+.history-table tr .address {
+  width: 200px;
+}
+.history-table tr td a:hover {
+  color: #a6a6a6;
+}
+.history-table tr .productss {
+  width: 150px;
+}
+.profile .col1 .bottom .logout2 {
+  --color: var(--browncolor);
+  background-color: white;
+  display: inline-block;
+  width: 20em;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  border-radius: 6px;
+  color: var(--color);
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+  color: var(--browncolor);
+  text-decoration: none;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.profile .col1 .bottom .logout2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.profile .col1 .bottom .logout2:hover {
+  color: #fff;
+}
+
+.profile .col1 .bottom .logout2:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.profile .col1 .bottom .logout2:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.profile .col1 .bottom .logout2:active:before {
+  background: var(--browncolor);
+  transition: background 0s;
+}
+.editprofile {
+  display: flex;
+  margin: 50px 200px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--browncolor);
+}
+.editprofile h1 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.editprofile button {
+  font-size: 10px;
+  font-weight: 500;
+  background-color: white;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.maindiv h1 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.maindiv .flexing {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 400px;
+}
+.maindiv .flexing .left {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.maindiv .flexing .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.maindiv .flexing .left input,
+.maindiv .flexing .left textarea {
+  margin-right: 30px;
+}
+.maindiv .flexing input,
+.maindiv .flexing textarea {
+  border: 1px solid var(--browncolor);
+  font-size: 5;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.maindiv .flexing textarea {
+  height: 100%;
+}
+.maindiv .flexing input::placeholder,
+.maindiv .flexing textarea::placeholder {
+  font-weight: 700;
+  color: var(--browncolor);
+  font-size: 9px;
+}
+
+.savebutton .btn {
+  font-size: 10px;
+  padding: 13px;
+  border: 1px solid white;
+  background-color: #231f20;
+  color: white;
+}
+
+.savebutton .btn:hover {
+  border: 1px solid var(--browncolor);
+  background-color: white;
+  color: var(--browncolor);
 }
