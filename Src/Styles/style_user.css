@@ -2031,3 +2031,41 @@ ss .view-div-2 label {
   background-color: white;
   color: var(--browncolor);
 }
+.reviewback {
+  display: flex;
+  margin: 50px 200px;
+  justify-content: end;
+}
+
+.reviewback button {
+  font-size: 10px;
+  font-weight: 500;
+  background-color: white;
+  border: 0;
+  margin-bottom: -100px;
+}
+.review-title {
+  margin-top: -100px;
+}
+.review-title h1 {
+  font-weight: 700;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  background-color:#231f20 ;
+}
+.rating > span {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc;
+  
+}
+.rating > span:hover,
+.rating > span:hover ~ span {
+  color: #ffd700;
+}
+.rating > span.active,
+.rating > span.active ~ span {
+  color: #ffd700;
+}
