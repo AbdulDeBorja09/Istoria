@@ -27,6 +27,9 @@ input[type="time"]:active {
   background-color: var(--browncolor);
   color: var(--browncolor);
 }
+p {
+  line-height: 1.5;
+}
 
 .istoria {
   margin-right: 75px;
@@ -158,14 +161,18 @@ input[type="time"]:active {
 footer {
   border-top: 1px solid var(--browncolor);
 }
+footer a {
+  text-decoration: none;
+  color: var(--browncolor);
+}
 .footer {
-  margin: 50px 100px 50px 100px;
+  margin: 30px 100px 10px 100px;
   display: flex;
   justify-content: space-between;
 }
 .colm1 h5 {
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .colm1 h6 {
   margin-top: 20px;
@@ -175,14 +182,15 @@ footer {
 .colm1 h4 {
   font-weight: 700;
   border-bottom: 3px solid var(--browncolor);
-  font-size: 20px;
+  font-size: 15px;
+  width: 219px;
 }
 .colm2 h5 {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
 }
 .colm2 h6 {
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 25px;
 }
 .colm2 img {
@@ -241,6 +249,15 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.subnav-coffee .left {
+  display: flex;
+}
+.subnav-coffee .left h1 {
+  font-size: 10px;
+  margin-bottom: -10px;
+
+  padding: 18px;
+}
 .subnav-global {
   display: flex;
   justify-content: flex-start;
@@ -264,7 +281,7 @@ footer {
   color: var(--browncolor);
 }
 .menu-flex .box {
-  padding: 80px;
+  padding: 080px 50px 0px 50px;
   text-align: center;
   width: 300px;
   height: 400px;
@@ -274,6 +291,7 @@ footer {
 
 .menu-flex .box h1 {
   margin-top: 20px;
+  text-align: center;
 }
 .menu-flex .box:hover {
   border-radius: 30px;
@@ -313,6 +331,10 @@ footer {
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
+}
+.coffe-flex .box a {
+  text-decoration: none;
+  color: var(--browncolor);
 }
 .coffe-flex .box {
   padding: 50px;
@@ -398,7 +420,7 @@ footer {
   font-size: 10px;
   margin-bottom: 10px;
 }
-ss .view-div-2 label {
+.view-div-2 label {
   font-size: 10px;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -596,21 +618,24 @@ ss .view-div-2 label {
   border: 1px solid var(--browncolor);
   font-weight: 700;
 }
-.nega {
-  margin-left: -25px;
-}
 .review {
   margin-top: 50px;
 }
 .review h1 {
   margin-top: 30px;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 .overallrating p {
   font-weight: 700;
   font-size: 12px;
   margin-top: 5px;
 }
+
+.overallrating {
+  margin-right: 10px;
+}
+
 .starstatic {
   display: flex;
   flex-direction: row;
@@ -624,6 +649,10 @@ ss .view-div-2 label {
 .detailrating {
   border-left: 2px solid var(--browncolor);
   line-height: 12px;
+  padding-left: 10px;
+}
+.star-rating-container {
+  display: flex;
 }
 .reviewtop img {
   width: 70px;
@@ -653,11 +682,18 @@ ss .view-div-2 label {
   font-weight: 500;
 }
 .reviewbot p {
-  font-size: 15px;
-  width: 550px;
+  font-size: 12px;
+  margin-left: 80px;
 }
 .reviewdetstars ion-icon {
   margin-right: 3px;
+}
+.reviewsrcollbox {
+  height: 590px;
+}
+.reviewsrcollbox .scrollbox {
+  overflow-y: auto;
+  height: 100%;
 }
 .about-title,
 .contactus-title {
@@ -1437,7 +1473,7 @@ ss .view-div-2 label {
 .reciept .return a {
   border: 0px;
   background-color: white;
-  font-size: 13px;
+  font-size: 10px;
   border-bottom: 1px solid var(--browncolor);
   text-decoration: none;
   color: var(--browncolor);
@@ -1467,11 +1503,12 @@ ss .view-div-2 label {
 .reciept .maindiv .col1 .date h6 {
   font-size: 11px;
 }
-.reciept .maindiv .col1 .details h1 {
+.reciept .maindiv .col1 .detailss h1 {
   font-size: 17px;
+  text-align: start;
   font-weight: 700;
 }
-.reciept .maindiv .col1 .details h2 {
+.reciept .maindiv .col1 .detailss h2 {
   font-weight: 700;
   font-size: 13px;
 }
