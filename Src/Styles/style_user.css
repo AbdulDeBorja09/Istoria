@@ -2135,3 +2135,187 @@ footer a {
   color: var(--browncolor);
   border: 1px solid var(--browncolor);
 }
+.modal {
+  display: none;
+  left: 0;
+  top: 0;
+  border-radius: 1px;
+  width: 100%;
+  padding-bottom: 40px;
+
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 1000px; /* Adjust maximum width as needed */
+  max-height: 2100px;
+}
+.modal-content .close {
+  font-size: 30px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.loginform {
+  display: flex;
+}
+.loginform .column1 {
+  width: 50%;
+  margin-left: 5px;
+}
+.loginform #password {
+  margin-left: -13px;
+}
+
+.loginform .column2 {
+  width: 50%;
+  padding: 20px 100px 10px 0px;
+}
+.loginbox {
+  padding: 30px 30px 30px 30px;
+  border: 1px solid #231f20;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.loginbox h1 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.loginbox input {
+  border: 1px solid var(--browncolor);
+  border-radius: 7px;
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.loginbox input::placeholder {
+  font-size: 13px;
+  font-weight: 500;
+}
+.loginbox {
+  text-align: center;
+}
+.loginbox .button-login {
+  margin-top: 20px;
+}
+.loginbox .button-login h1 {
+  font-size: 8px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: -10px;
+}
+.loginbox .agree {
+  margin-top: -10px;
+}
+.loginbox .agree span {
+  font-size: 9px;
+}
+.loginbox .agree .check {
+  width: 15px;
+  margin-top: 0px;
+  margin-bottom: -12px;
+  margin-left: 0px;
+}
+.loginbox a {
+  color: var(--browncolor);
+  font-weight: 800;
+}
+.loginbox button {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--browncolor);
+  background-color: #231f20;
+  transition: color 0.2s;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 6px;
+  color: var(--color);
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.loginbox button:before {
+  content: "";
+  color: var(--browncolor);
+  position: absolute;
+  z-index: -1;
+  background: white;
+  height: 110px;
+  width: 555px;
+  border-radius: 50%;
+}
+
+.loginbox button:hover {
+  color: var(--browncolor);
+  border: 1px solid var(--browncolor);
+  background-color: #231f20;
+}
+
+.loginbox button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.loginbox button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.loginbox button:active:before {
+  background: #231f20;
+  transition: background 0s;
+}
+.haveanacc {
+  font-size: 11px;
+  margin-top: 50px;
+}
+.haveanacc a {
+  font-weight: 700;
+  color: var(--browncolor);
+}
+.terms {
+  color: var(--browncolor);
+  font-weight: 700;
+}
+.brandings {
+  text-align: center;
+  margin-top: -30px;
+}
+.brandings img {
+  width: 50px;
+}
+.brandings .img2 {
+  margin-left: -15px;
+}
+.agree {
+  display: flex;
+  margin-left: 3px;
+  margin-top: -20px;
+}
+.agree input:hover {
+  color: var(--browncolor);
+}
+.agree label {
+  font-weight: 400px;
+  margin-left: 10px;
+  margin-top: 26px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.loginbox i {
+  margin-left: -40px;
+}

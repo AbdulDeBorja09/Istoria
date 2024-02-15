@@ -58,6 +58,20 @@ function togglePasswordVisibility2() {
   }
 }
 
+var modal = document.getElementById("myModal");
+var anchors = document.getElementsByClassName("openModal");
+window.onload = function () {
+  modal.style.display = "block";
+};
+anchor.onclick = function () {
+  modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+modal.getElementsByClassName("close")[0].onclick = function () {
+  modal.style.display = "none";
+};
+
 if (window.location.pathname === "../../User/user_tray.html") {
   document.addEventListener("DOMContentLoaded", QuantityButton);
 }
