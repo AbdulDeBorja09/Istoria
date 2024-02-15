@@ -102,3 +102,20 @@ for (var i = 0; i < modalLinks.length; i++) {
     modal.style.display = "block";
   };
 }
+
+let lastScrollTop = 0;
+window.addEventListener("scroll", function () {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  if (currentScroll > lastScrollTop) {
+    // Scroll down
+    document
+      .getElementById("navbarToggleExternalContent")
+      .classList.remove("show");
+  } else {
+    // Scroll up
+    document
+      .getElementById("navbarToggleExternalContent")
+      .classList.add("show");
+  }
+  lastScrollTop = currentScroll;
+});
