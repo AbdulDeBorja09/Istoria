@@ -406,7 +406,7 @@ footer a {
   font-size: 50px;
 }
 .view-div-2 {
-  padding: 40px;
+  padding: 0px 40px 40px 40p;
 }
 .view-div-2 h1 {
   font-weight: 700;
@@ -429,13 +429,6 @@ footer a {
 .view-div-2 input[type="radio"]:checked + label {
   background-color: var(--browncolor);
   color: white;
-}
-.view-div-2 {
-  overflow-y: auto;
-  height: 100%;
-}
-.viewpagediv {
-  height: 620px;
 }
 
 .star ion-icon {
@@ -690,7 +683,7 @@ footer a {
   margin-right: 3px;
 }
 .reviewsrcollbox {
-  height: 590px;
+  height: 680px;
 }
 .reviewsrcollbox .scrollbox {
   overflow-y: auto;
@@ -2135,7 +2128,7 @@ footer a {
   color: var(--browncolor);
   border: 1px solid var(--browncolor);
 }
-.modal {
+.modals {
   display: none;
   left: 0;
   top: 0;
@@ -2147,7 +2140,7 @@ footer a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
+.modal-contents {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -2156,7 +2149,7 @@ footer a {
   max-width: 1000px; /* Adjust maximum width as needed */
   max-height: 2100px;
 }
-.modal-content .close {
+.modal-contents .close {
   font-size: 30px;
   margin-top: -20px;
   cursor: pointer;
