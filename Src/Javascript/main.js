@@ -58,20 +58,47 @@ function togglePasswordVisibility2() {
   }
 }
 
+// var modal = document.getElementById("myModal");
+
+// // When the page finishes loading, open the modal
+// window.onload = function () {
+//   modal.style.display = "block";
+// };
+
+// // When the user clicks on <span> (x), close the modal
+// modal.getElementsByClassName("close")[0].onclick = function () {
+//   modal.style.display = "none";
+// };
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// };
+
+// Get the modal
 var modal = document.getElementById("myModal");
-var anchors = document.getElementsByClassName("openModal");
+
+// Get the anchor tags with the class 'open-modal' to open the modal
+var modalLinks = document.querySelectorAll(".open-modal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the page loads, open the modal
 window.onload = function () {
-  modal.style.display = "block";
-};
-anchor.onclick = function () {
   modal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-modal.getElementsByClassName("close")[0].onclick = function () {
+span.onclick = function () {
   modal.style.display = "none";
 };
 
-if (window.location.pathname === "../../User/user_tray.html") {
-  document.addEventListener("DOMContentLoaded", QuantityButton);
+// When the user clicks on an anchor tag with the class 'open-modal' to open the modal
+for (var i = 0; i < modalLinks.length; i++) {
+  modalLinks[i].onclick = function () {
+    modal.style.display = "block";
+  };
 }

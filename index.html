@@ -47,11 +47,13 @@
     >
       <div class="navigations text-center">
         <ul>
-          <li><a class="openModal" href="#">PRODUCTS</a></li>
-          <li><a class="openModal" href="#">CONTACT US</a></li>
-          <li><a class="openModal" href="#">ABOUT US</a></li>
-          <li><a class="openModal" href="#">ALBUM</a></li>
-          <li><a class="openModal" href="../Login/login.html">JOINS US </a></li>
+          <li><a class="open-modal" href="#">PRODUCTS</a></li>
+          <li><a class="open-modal" href="#">CONTACT US</a></li>
+          <li><a class="open-modal" href="#">ABOUT US</a></li>
+          <li><a class="open-modal" href="#">ALBUM</a></li>
+          <li>
+            <a class="open-modal" href="../Login/signup.html">JOINS US </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -72,7 +74,7 @@
             espresso to the comforting embrace of a frothy latte, each sip is
             crafted with passion and precision.
           </p>
-          <a href="#" class="openModal btn">LEARN MORE</a>
+          <a href="#" class="open-modal btn">LEARN MORE</a>
         </div>
         <div class="lower">
           <p>
@@ -133,7 +135,7 @@
         </div>
       </div>
       <div class="viewall text-center">
-        <a class="opendModal stylishbtn3" href="#">VIEW ALL</a>
+        <a class="open-modal stylishbtn3" href="#">VIEW ALL</a>
       </div>
     </section>
     <div class="letknow">
@@ -152,7 +154,7 @@
             and make your coffee experience even more delightful!
           </p>
           <div class="button">
-            <a class="opendModal stylishbtn2" href="#">MORE DETAILS</a>
+            <a class="open-modal stylishbtn2" href="#">MORE DETAILS</a>
           </div>
         </div>
       </div>
@@ -173,7 +175,7 @@
             and become part of the ISTORIA COFFEE family!
           </p>
           <div class="button">
-            <a class="opendModal stylishbtn2" href="/Login/signup.html"
+            <a class="open-modal stylishbtn2" href="/Login/signup.html"
               >MORE DETAILS</a
             >
           </div>
@@ -199,7 +201,7 @@
         </p>
       </div>
       <div class="viewmore">
-        <a href="#" class="opendModal stylishbtn"> VIEW MORE</a>
+        <a href="#" class="open-modal stylishbtn"> VIEW MORE</a>
       </div>
       <img src="../assets/Images/banner2.png" width="100%" />
     </section>
@@ -207,8 +209,8 @@
       <div class="footer">
         <div class="colm1">
           <h4>ISTORIA COFFEE SHOP</h4>
-          <h5><a href="#" class="opendModal">CONTACT US</a></h5>
-          <h5><a href="#" class="opendModal">ABOUT US</a></h5>
+          <h5><a href="#myModal" class="open-modal">CONTACT US</a></h5>
+          <h5><a href="#" class="open-modal">ABOUT US</a></h5>
 
           <h6>
             © 2024, istoria coffee shop. All rights reserved. <br />Perfectly
@@ -245,7 +247,7 @@
               <img class="img2" src="/assets/Images/logo3.png" alt="" />
             </div>
             <div class="loginbox">
-              <form action="post">
+              <form action="/User/user_home.html">
                 <h1>LOG IN</h1>
                 <input type="text" required placeholder="EMAIL" />
                 <input
@@ -279,11 +281,6 @@
         </div>
       </div>
     </div>
-    <script>
-      modal.getElementsByClassName("close")[0].onclick = function () {
-        modal.style.display = "none";
-      };
-    </script>
 
     <script
       src="https://kit.fontawesome.com/8a364c3095.js"
