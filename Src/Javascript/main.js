@@ -78,23 +78,20 @@ for (var i = 0; i < modalLinks.length; i++) {
   };
 }
 
-//Terms & condition Modal
-var modal = document.getElementById("termsmodal");
-var modalLinks = document.querySelectorAll(".terms");
-var span = document.getElementsByClassName("close")[0];
-window.onload = function () {
-  modal.style.display = "block";
-};
+// //Terms & condition Modal
+// var modal = document.getElementById("termsmodal");
+// var modalLinks = document.querySelectorAll(".terms");
+// var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
+// span.onclick = function () {
+//   modal.style.display = "none";
+// };
 
-for (var i = 0; i < modalLinks.length; i++) {
-  modalLinks[i].onclick = function () {
-    modal.style.display = "block";
-  };
-}
+// for (var i = 0; i < modalLinks.length; i++) {
+//   modalLinks[i].onclick = function () {
+//     modal.style.display = "block";
+//   };
+// }
 
 //NAVBAR
 let lastScrollTop = 0;
