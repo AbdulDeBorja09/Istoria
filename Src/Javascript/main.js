@@ -1,34 +1,63 @@
-// Get the elements
-const minusBtn = document.getElementById("minusBtn");
-const addBtn = document.getElementById("addBtn");
-const quantityInput = document.getElementById("quantityInput");
+function QuantityButton() {
+  const minusBtn = document.getElementById("minusBtn");
+  const addBtn = document.getElementById("addBtn");
+  const quantityInput = document.getElementById("quantityInput");
 
-// Add event listener to minus button
-minusBtn.addEventListener("click", () => {
-  let currentQuantity = parseInt(quantityInput.value);
-  if (currentQuantity > 1) {
-    quantityInput.value = currentQuantity - 1;
-    updateButtonState();
+  minusBtn.addEventListener("click", () => {
+    let currentQuantity = parseInt(quantityInput.value);
+    if (currentQuantity > 1) {
+      quantityInput.value = currentQuantity - 1;
+      updateButtonState();
+    }
+  });
+
+  addBtn.addEventListener("click", () => {
+    let currentQuantity = parseInt(quantityInput.value);
+    if (currentQuantity < 10) {
+      quantityInput.value = currentQuantity + 1;
+      updateButtonState();
+    }
+  });
+
+  function updateButtonState() {
+    let currentQuantity = parseInt(quantityInput.value);
+    minusBtn.disabled = currentQuantity === 1;
+    addBtn.disabled = currentQuantity === 10;
+    minusBtn.classList.toggle("disabled", currentQuantity === 1);
+    addBtn.classList.toggle("disabled", currentQuantity === 10);
   }
-});
+}
 
-// Add event listener to add button
-addBtn.addEventListener("click", () => {
-  let currentQuantity = parseInt(quantityInput.value);
-  if (currentQuantity < 10) {
-    quantityInput.value = currentQuantity + 1;
-    updateButtonState();
+function togglePasswordVisibility() {
+  var passwordField = document.getElementById("password");
+  var eyeIcon = document.getElementById("eyeIcon");
+
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+    eyeIcon.classList.remove("fa-eye");
+    eyeIcon.classList.add("fa-eye-slash");
+  } else {
+    passwordField.type = "password";
+    eyeIcon.classList.remove("fa-eye-slash");
+    eyeIcon.classList.add("fa-eye");
   }
-});
+}
 
-// Function to update button state
-function updateButtonState() {
-  let currentQuantity = parseInt(quantityInput.value);
-  // Enable or disable minus button based on quantity
-  minusBtn.disabled = currentQuantity === 1;
-  // Enable or disable add button based on quantity
-  addBtn.disabled = currentQuantity === 10;
-  // Apply/disable styles based on disabled state
-  minusBtn.classList.toggle("disabled", currentQuantity === 1);
-  addBtn.classList.toggle("disabled", currentQuantity === 10);
+function togglePasswordVisibility2() {
+  var passwordField = document.getElementById("cpassword");
+  var eyeIcon = document.getElementById("eyeIcon2");
+
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+    eyeIcon.classList.remove("fa-eye");
+    eyeIcon.classList.add("fa-eye-slash");
+  } else {
+    passwordField.type = "password";
+    eyeIcon.classList.remove("fa-eye-slash");
+    eyeIcon.classList.add("fa-eye");
+  }
+}
+
+if (window.location.pathname === "../../User/user_tray.html") {
+  document.addEventListener("DOMContentLoaded", QuantityButton);
 }
