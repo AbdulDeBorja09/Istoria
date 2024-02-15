@@ -9,6 +9,7 @@
 :root {
   --browncolor: #231f20;
 }
+
 .signup {
   display: flex;
   justify-content: space-between;
@@ -293,4 +294,84 @@ input[type="checkbox"] {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+}
+#termsmodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  overflow: auto;
+}
+
+.modal-content-term {
+  background-color: #ffffff;
+  margin: 7% auto;
+  padding: 0px 20px;
+  height: 750px;
+  border: 1px solid #888;
+  width: 50%;
+}
+.closediv {
+  display: flex;
+  justify-content: end;
+}
+.closediv .close {
+  font-size: 30px;
+  cursor: pointer;
+}
+.modal-content-term h1 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+.modal-content-term .termsdiv {
+  height: 450px;
+  border: 1px solid gray;
+  margin: 20px 30px;
+}
+.modal-content-term .termsdiv .content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px 40px;
+  text-transform: uppercase;
+}
+.modal-content-term .termsdiv .content h6 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+.modal-content-term .termsdiv .content h5 {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+.modal-content-term .termsdiv .content a {
+  color: var(--browncolor);
+  font-weight: 700;
+}
+.modal-content-term .termsdiv .content p {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: inherit;
+  text-indent: 30px;
+  padding-left: 0;
+}
+.modal-content-term .termsdiv .content ul li {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.9;
+}
+.termsbutton .close {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid var(--browncolor);
+}
+.termsbutton .close:hover {
+  background-color: var(--browncolor);
+  color: white;
 }

@@ -61,6 +61,7 @@ function togglePasswordVisibility2() {
 }
 
 //Index Modal
+
 var modal = document.getElementById("myModal");
 var modalLinks = document.querySelectorAll(".open-modal");
 var span = document.getElementsByClassName("close")[0];
@@ -78,20 +79,7 @@ for (var i = 0; i < modalLinks.length; i++) {
   };
 }
 
-// //Terms & condition Modal
-// var modal = document.getElementById("termsmodal");
-// var modalLinks = document.querySelectorAll(".terms");
-// var span = document.getElementsByClassName("close")[0];
-
-// span.onclick = function () {
-//   modal.style.display = "none";
-// };
-
-// for (var i = 0; i < modalLinks.length; i++) {
-//   modalLinks[i].onclick = function () {
-//     modal.style.display = "block";
-//   };
-// }
+//Terms & condition Modal
 
 //NAVBAR
 let lastScrollTop = 0;
