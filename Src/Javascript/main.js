@@ -1,3 +1,4 @@
+//Quantity Button
 function QuantityButton() {
   const minusBtn = document.getElementById("minusBtn");
   const addBtn = document.getElementById("addBtn");
@@ -28,6 +29,7 @@ function QuantityButton() {
   }
 }
 
+//Toggle Password show
 function togglePasswordVisibility() {
   var passwordField = document.getElementById("password");
   var eyeIcon = document.getElementById("eyeIcon");
@@ -42,7 +44,7 @@ function togglePasswordVisibility() {
     eyeIcon.classList.add("fa-eye");
   }
 }
-
+//Toggle Confirm Password show
 function togglePasswordVisibility2() {
   var passwordField = document.getElementById("cpassword");
   var eyeIcon = document.getElementById("eyeIcon2");
@@ -58,61 +60,51 @@ function togglePasswordVisibility2() {
   }
 }
 
-// var modal = document.getElementById("myModal");
-
-// // When the page finishes loading, open the modal
-// window.onload = function () {
-//   modal.style.display = "block";
-// };
-
-// // When the user clicks on <span> (x), close the modal
-// modal.getElementsByClassName("close")[0].onclick = function () {
-//   modal.style.display = "none";
-// };
-
-// // When the user clicks anywhere outside of the modal, close it
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// };
-
-// Get the modal
+//Index Modal
 var modal = document.getElementById("myModal");
-
-// Get the anchor tags with the class 'open-modal' to open the modal
 var modalLinks = document.querySelectorAll(".open-modal");
-
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the page loads, open the modal
 window.onload = function () {
   modal.style.display = "block";
 };
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
 };
 
-// When the user clicks on an anchor tag with the class 'open-modal' to open the modal
 for (var i = 0; i < modalLinks.length; i++) {
   modalLinks[i].onclick = function () {
     modal.style.display = "block";
   };
 }
 
+//Terms & condition Modal
+var modal = document.getElementById("termsmodal");
+var modalLinks = document.querySelectorAll(".terms");
+var span = document.getElementsByClassName("close")[0];
+window.onload = function () {
+  modal.style.display = "block";
+};
+
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+for (var i = 0; i < modalLinks.length; i++) {
+  modalLinks[i].onclick = function () {
+    modal.style.display = "block";
+  };
+}
+
+//NAVBAR
 let lastScrollTop = 0;
 window.addEventListener("scroll", function () {
   let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
   if (currentScroll > lastScrollTop) {
-    // Scroll down
     document
       .getElementById("navbarToggleExternalContent")
       .classList.remove("show");
   } else {
-    // Scroll up
     document
       .getElementById("navbarToggleExternalContent")
       .classList.add("show");
